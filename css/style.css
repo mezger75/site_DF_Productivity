@@ -276,13 +276,13 @@ li>a:hover {
 .footer {
     flex: 0 0 auto;
     height: 287px;
-    position: relative;
 }
 
 .footer__container {
     height: 101px;
     flex-direction: column;
     align-items: start;
+    margin-top: 93px;
 }
 
 .footer__wrapper {
@@ -300,4 +300,28 @@ li>a:hover {
     text-align: left;
     color: #aeb8d0;
     margin-left: 65px;
+}
+
+@media (max-width: 991.98px) {
+    .footer {
+        flex: 0 0 auto;
+        height: 257px;
+}
+@media (max-width: 767.98px) {
+    .footer {
+        flex: 0 0 auto;
+        height: 207px;
+    }
+        .footer__container {
+            margin-top: 70px;
+        }
+}
+@media (max-width: 479.98px) {
+    .footer {
+        flex: 0 0 auto;
+        height: 150px;
+    }
+        .footer__container {
+            margin-top: 40px;
+        }
 }
