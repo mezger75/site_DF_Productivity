@@ -1,142 +1,303 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-content: '';
-content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-border-collapse: collapse;
-border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-======================================================================================
+/*======================================================================================*/
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+}
 
 .header {
-    height: 80px;
-    width: 100%;
-    background-color: #fff;
-    display: flex;
-    font-family: 'Quicksand';
 }
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 19px 117px 19px 117px;
+
+[class*="__container"] {
+  max-width: 1236px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
+
+.header__container {
+  height: 80px;
+  background-color: #fff;
+  font-family: "Quicksand";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header__logo-list {
-    display: flex;
+  display: flex;
+  align-items: center;
+  width: 542px;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-right: 5px;
 }
 
 .header__menu {
+  margin-left: 5px;
 }
-
-.header__menu {
-    display: flex;
-    position: relative;
-}
-
-
-.header__menu:before {
-    content: '';
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    background-color: #5E81FE;
-    position: absolute;
-    top: -5px;
-    left: 0;
-}
-
 
 .header__list {
-    font-weight: 500;
-    display: flex;
-    gap: 42px;
-    list-style-type: none;
-    font-family: Quicksand;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 15px;
-    letter-spacing: 0.05em;
-    text-align: center;
-    padding-left: 6rem;
+  font-weight: 500;
+  display: flex;
+  gap: 42px;
+  list-style-type: none;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+    .header__list {
+      gap: 28px;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .header__list {
+      gap: 6px;
+    }
+  }
+  .burger {
+    display: none;
+  }
+@media (max-width: 479.98px) {
+    .header__list {
+      display: none;
+    }
+    .burger {
+        display: block;
+        margin-right: 100px;
+    }
 }
 
 .header__list * {
-    text-decoration: none;
-    color: #697CA6;
+  text-decoration: none;
+  color: #697ca6;
+  margin-right: 5px;
 }
 
-li>a:hover {
-    color: #5E81FE;
-    font-weight: 700;
+li > a:hover {
+  color: #5e81fe;
+  font-weight: 700;
 }
 
 .header__icons-button {
-    display: flex;
-    align-items: center;
-    width: 330px;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 330px;
+  justify-content: space-between;
 }
 .header__icons {
-    display: flex;
-    gap: 35px;
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
 }
+
+@media (max-width: 767.98px) {
+    .header__icons {
+        display: none;
+    }
+    .header__icons-button {
+        justify-content: flex-end;
+      }
+  }
 
 .icon {
 }
 .header__button {
-    
+  margin-left: 5px;
 }
 .button {
-    color: #3A79FF;
-    width: 113px;
-    height: 42px;
-    background-color: #D2E1FF;
-    border-radius: 2px;
-    border: none;
-    font-family: Quicksand;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-align: center;
+  color: #3a79ff;
+  width: 113px;
+  height: 42px;
+  background-color: #d2e1ff;
+  border-radius: 2px;
+  border: none;
+  font-family: Quicksand;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
-.button:active {
-    background-color: #b3cdff;
+@media (max-width: 767.98px) {
+    .button {
+        width: 90px;
+        height: 33px;
+    }
+
+    .button:active {
+        background-color: #b3cdff;
+    }
+}
+/*===================================================================*/
+
+.main {
+  flex: 1 1 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+  height: 287px;
+  position: relative;
+}
+
+.footer__container {
+    height: 101px;
+    flex-direction: column;
+    align-items: start;
+}
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer__text {
+  font-family: Quicksand;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #aeb8d0;
+  margin-left: 65px;
 }
