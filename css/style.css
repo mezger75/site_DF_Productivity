@@ -443,3 +443,20 @@ li>a:hover {
         height: 520px;
     }
 }
+/*====================================*/
+
+.partners {
+    height: 145px;
+    display: flex;
+    align-items: center;
+}
+.partners__container {
+    display: flex;
+    width: 888px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.partners__image {
+    margin: 5px 5px;
+}
