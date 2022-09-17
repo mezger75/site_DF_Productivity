@@ -194,10 +194,31 @@ body {
     .header__list {
         display: none;
     }
-
+    .header__logo-list {
+        width: 5px;
+    }
     .burger {
-        display: block;
-        margin-right: 100px;
+        display: inline-block;
+        position: relative;
+        bottom: 7px;
+        left: 10px;
+    }
+
+    .burger span,
+    .burger span::after, 
+    .burger span::before {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background-color: #222;
+        position: absolute;
+    }
+
+    .burger span::after {
+        transform: translateY(-5px);
+    }
+    .burger span::before {
+        transform: translateY(5px);
     }
 }
 
