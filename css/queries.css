@@ -69,8 +69,8 @@
     align-items: center;
   }
   .sign-up__button {
-    width: 184px !important;
-    height: 59px !important;
+    width: 184px;
+    height: 59px;
   }
   .accordion__button {
     grid-row: 3;
@@ -216,6 +216,12 @@
   .carousel__lens {
     display: none;
   }
+  .sign-up__button {
+    width: 304px;
+  }
+  .text-box__buttons {
+    align-self: center;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -304,6 +310,7 @@
   }
   .images_event_border {
     left: 170px;
+    top: 100px;
   }
   .accordion__title {
     font-size: 20px;
@@ -336,5 +343,11 @@
   }
   .carousel {
     padding: 52px 6px 64px 6px;
+  }
+  .reading {
+    padding: 24px;
+  }
+  .carousel__text-box {
+    padding: 0 10px;
   }
 }
