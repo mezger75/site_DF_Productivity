@@ -907,7 +907,7 @@ li a:hover {
 /* ACCORDION SECTION */
 
 .accordion {
-  width: 743px;
+  max-width: 743px;
   margin: 175px auto;
   display: flex;
   flex-direction: column;

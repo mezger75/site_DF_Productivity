@@ -1,3 +1,10 @@
+@media (max-width: 1250px) {
+  .testimoials__wrapper {
+    margin-left: 200px;
+    gap: 120px;
+  }
+}
+
 @media (max-width: 1150px) {
   .plan__wrapper {
     flex-direction: column;
@@ -10,6 +17,22 @@
   }
   .images_search_border {
     bottom: 100px;
+  }
+  .testimoials__wrapper {
+    margin-left: 80px;
+    gap: 80px;
+  }
+  .carousel {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+  .reading {
+    height: auto;
+    padding: 48px;
+  }
+  .carousel__lens {
+    top: 25%;
   }
 }
 
@@ -48,6 +71,26 @@
   .sign-up__button {
     width: 184px !important;
     height: 59px !important;
+  }
+  .accordion__button {
+    grid-row: 3;
+    grid-column: 2;
+  }
+  .testimoials__wrapper {
+    flex-direction: column;
+    overflow-x: hidden;
+    padding: 48px 16px;
+    gap: 80px;
+    margin-left: 10px;
+  }
+  .opacity__box {
+    display: none;
+  }
+  .testimonials__quotes-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .testimonials {
+    height: 100%;
   }
 }
 
@@ -138,6 +181,41 @@
     right: 180px;
     bottom: 0;
   }
+  .testimoials__wrapper {
+    margin-left: 0;
+    padding: 48px 6px;
+  }
+  .testimonials__text-box {
+    width: 333px;
+  }
+  .arrow-left,
+  .arrow-right {
+    display: none;
+  }
+  .carousel {
+    padding: 52px 20px;
+  }
+  .carousel__images {
+    height: 330px;
+  }
+  .carousel__lens {
+    top: 27%;
+  }
+  .small-image,
+  .small-image-2 {
+    display: none;
+  }
+  .carousel__text-box {
+    width: 100%;
+  }
+  .carousel__images {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+  }
+  .carousel__lens {
+    display: none;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -226,5 +304,37 @@
   }
   .images_event_border {
     left: 170px;
+  }
+  .accordion__title {
+    font-size: 20px;
+  }
+  .quotes__box {
+    width: 100%;
+    padding: 20px;
+  }
+  .quotes__box img {
+    position: absolute;
+    transform: translateY(178%);
+  }
+  .testimonials__text-box {
+    width: 100%;
+    padding: 24px;
+  }
+  .text-box__title {
+    font-size: 30px;
+  }
+  .text-box__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 9px;
+  }
+  .buttons__link {
+    margin-left: 0;
+  }
+  .carousel {
+    padding: 52px 6px 64px 6px;
   }
 }
