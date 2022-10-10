@@ -92,6 +92,9 @@
   .testimonials {
     height: 100%;
   }
+  .about__container {
+    height: 700px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -175,10 +178,10 @@
     display: none;
   }
   .images_event_border {
-    left: 150px;
+    left: 175px;
   }
   .images_search_border {
-    right: 180px;
+    right: 177px;
     bottom: 0;
   }
   .testimoials__wrapper {
@@ -274,7 +277,7 @@
 
   .about {
     height: 100%;
-    margin: 48px auto;
+    margin: 64px auto;
   }
   .about__container {
     height: 100%;
@@ -309,7 +312,7 @@
     padding: 48px 12px;
   }
   .images_event_border {
-    left: 170px;
+    left: 177px;
     top: 100px;
   }
   .accordion__title {
@@ -349,5 +352,14 @@
   }
   .carousel__text-box {
     padding: 0 10px;
+  }
+  .reading {
+    padding: 80px 24px 48px 24px;
+  }
+  .accordion {
+    margin: 100px auto;
+  }
+  .content__buttons {
+    justify-content: center;
   }
 }
