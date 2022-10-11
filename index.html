@@ -14,48 +14,75 @@
       href="https://fonts.googleapis.com/css?family=Roboto:regular,500"
       rel="stylesheet"
     />
+    <script defer src="js/script.js"></script>
     <title>Desktop first</title>
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="header__container">
-          <div class="header__logo-list">
+          <nav class="nav">
             <div class="header__logo">
               <img src="img/logo.svg" alt="logo" class="logo__header" />
             </div>
-            <nav class="header__menu">
-              <a href="#"
-                ><div class="burger"><span></span></div
-              ></a>
-              <ul class="header__list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Documentation</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header__icons-button">
-            <div class="header__icons">
-              <a href="#"
-                ><img src="img/f.svg" alt="Facebook" class="icon"
-              /></a>
-              <a href="#"
-                ><img src="img/Telegram_logo.svg" alt="Telegram" class="icon"
-              /></a>
-              <a href="#"
-                ><img src="img/Group 7.svg" alt="Twitter" class="icon"
-              /></a>
-              <a href="#"
-                ><img src="img/Group 8.svg" alt="Medium" class="icon"
-              /></a>
+            <ul class="header__list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Documentation</a></li>
+            </ul>
+
+            <div class="header__icons-button">
+              <div class="header__icons">
+                <a href="#"
+                  ><img src="img/f.svg" alt="Facebook" class="icon"
+                /></a>
+                <a href="#"
+                  ><img src="img/Telegram_logo.svg" alt="Telegram" class="icon"
+                /></a>
+                <a href="#"
+                  ><img src="img/Group 7.svg" alt="Twitter" class="icon"
+                /></a>
+                <a href="#"
+                  ><img src="img/Group 8.svg" alt="Medium" class="icon"
+                /></a>
+              </div>
+              <div class="header__button">
+                <a href="#"><button class="button">Get started</button></a>
+              </div>
+              <button class="burger">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="menu__button--close"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="menu__button--open"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </button>
             </div>
-            <div class="header__button">
-              <a href="#"><button class="button">Get started</button></a>
-            </div>
-          </div>
+          </nav>
         </div>
       </header>
       <main class="main">
@@ -678,7 +705,9 @@
               </div>
             </div>
           </div>
-          <div class="footer__text">Copyright © 2018 by Random site</div>
+          <div class="footer__text">
+            Copyright © <span class="year">2018</span> by Random site
+          </div>
         </div>
       </footer>
     </div>
