@@ -132,7 +132,9 @@ table {
 }
 
 /*======================================================================================*/
-html,
+html {
+  height: 100%;
+}
 body {
   height: 100%;
   font-family: "Quicksand", sans-serif;
@@ -199,10 +201,12 @@ body {
   text-align: center;
 }
 
-.header__list * {
+.list__link:link,
+.list__link:visited {
   text-decoration: none;
   color: #697ca6;
   margin-right: 5px;
+  font-weight: 700;
 }
 
 .nav-open .header__list {
@@ -219,12 +223,17 @@ body {
 .nav-open .menu__button--open {
   display: none;
 }
-li a,
+
+/* li a:link,
 li a:hover {
   color: #5e81fe;
   font-weight: 700;
+} */
+.list__link:hover,
+.list__link:active {
+  color: #5e81fe;
+  font-weight: 700;
 }
-
 .header__icons-button {
   display: flex;
   align-items: center;

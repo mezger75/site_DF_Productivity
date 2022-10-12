@@ -14,7 +14,12 @@
       href="https://fonts.googleapis.com/css?family=Roboto:regular,500"
       rel="stylesheet"
     />
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
     <script defer src="js/script.js"></script>
+
     <title>Desktop first</title>
   </head>
   <body>
@@ -26,11 +31,13 @@
               <img src="img/logo.svg" alt="logo" class="logo__header" />
             </div>
             <ul class="header__list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Documentation</a></li>
+              <li><a class="list__link" href="#">Home</a></li>
+              <li><a class="list__link" href="#blog">Blog</a></li>
+              <li><a class="list__link" href="#features">Features</a></li>
+              <li><a class="list__link" href="#pricing">Pricing</a></li>
+              <li>
+                <a class="list__link" href="#documentation">Documentation</a>
+              </li>
             </ul>
 
             <div class="header__icons-button">
@@ -49,7 +56,9 @@
                 /></a>
               </div>
               <div class="header__button">
-                <a href="#"><button class="button">Get started</button></a>
+                <a href="#pricing"
+                  ><button class="button">Get started</button></a
+                >
               </div>
               <button class="burger">
                 <svg
@@ -212,7 +221,7 @@
               </div>
             </div>
           </section>
-          <section class="about">
+          <section class="about" id="features">
             <div class="about__container">
               <div class="about__box">
                 <div class="about__box_text">
@@ -339,7 +348,7 @@
               </div>
             </div>
           </section>
-          <section class="reading">
+          <section class="reading" id="blog">
             <div class="reading__title-box">
               <p class="reading__subtitle">Our resources</p>
               <h3 class="reading__title">Start reading our blog</h3>
@@ -469,7 +478,7 @@
               </div>
             </div>
           </section>
-          <section class="accordion">
+          <section class="accordion" id="documentation">
             <p class="accordion__subtitle">customer help</p>
             <h3 class="accordion__title">Frequently asked questions</h3>
 
@@ -627,7 +636,7 @@
               </p>
             </div>
           </section>
-          <section class="get-started">
+          <section class="get-started" id="pricing">
             <div class="get-started__wrapper">
               <p class="get-started__subtitle">plan your life</p>
               <h2 class="get-started__title">
@@ -677,11 +686,15 @@
                   ><div class="burger"><span></span></div
                 ></a>
                 <ul class="header__list">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Documentation</a></li>
+                  <li><a class="list__link" href="#">Home</a></li>
+                  <li><a class="list__link" href="#blog">Blog</a></li>
+                  <li><a class="list__link" href="#features">Features</a></li>
+                  <li><a class="list__link" href="#pricing">Pricing</a></li>
+                  <li>
+                    <a class="list__link" href="#documentation"
+                      >Documentation</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -701,7 +714,9 @@
                 /></a>
               </div>
               <div class="header__button">
-                <a href="#"><button class="button">Get started</button></a>
+                <a href="#pricing"
+                  ><button class="button">Get started</button></a
+                >
               </div>
             </div>
           </div>
