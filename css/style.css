@@ -132,6 +132,7 @@ table {
 }
 
 /*======================================================================================*/
+
 html {
   height: 100%;
 }
@@ -143,7 +144,6 @@ body {
 
 .wrapper {
   display: flex;
-  /* min-height: 100%; */
   flex-direction: column;
   overflow: hidden;
 }
@@ -155,7 +155,7 @@ body {
 }
 
 .header__container {
-  max-width: 1206px;
+  /* max-width: 1206px; */
   height: 80px;
   background-color: #fff;
   display: flex;
@@ -224,16 +224,12 @@ body {
   display: none;
 }
 
-/* li a:link,
-li a:hover {
-  color: #5e81fe;
-  font-weight: 700;
-} */
 .list__link:hover,
 .list__link:active {
   color: #5e81fe;
   font-weight: 700;
 }
+
 .header__icons-button {
   display: flex;
   align-items: center;
@@ -287,6 +283,20 @@ li a:hover {
   display: none;
 }
 
+.sticky .header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+.sticky .wrapper {
+  margin-top: 80px;
+}
 /*===================================================================*/
 
 .main {
@@ -457,7 +467,6 @@ li a:hover {
 
 .plan__wrapper {
   width: 1090px;
-  /* max-height: 434px; */
   display: flex;
   margin-right: -36px;
   justify-content: space-between;
@@ -940,7 +949,6 @@ li a:hover {
 }
 .dots {
   display: flex;
-
   gap: 12px;
 }
 .dot {
@@ -1232,7 +1240,6 @@ li a:hover {
 /* TESTIMONIALS SECTION */
 
 .testimonials {
-  /* width: 1440px; */
   height: 480px;
   border-bottom: 1px solid #d8e3fe;
   border-top: 1px solid #d8e3fe;
@@ -1287,6 +1294,7 @@ li a:hover {
   column-gap: 64px;
   row-gap: 78px;
 }
+
 .quotes__box {
   width: 423px;
   height: 175px;
@@ -1313,9 +1321,11 @@ li a:hover {
   text-align: left;
   color: #676f95;
 }
+
 .quotes__dots {
   justify-self: center;
 }
+
 .opacity__box {
   opacity: 0.3;
 }
