@@ -9,7 +9,6 @@ btnNavEl.addEventListener("click", function () {
 });
 
 const allLinks = document.querySelectorAll("a:link");
-
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
@@ -31,7 +30,6 @@ allLinks.forEach(function (link) {
 });
 
 const sectionPartnersEl = document.querySelector(".partners");
-
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
@@ -46,6 +44,14 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(sectionPartnersEl);
+
+const headers = document.querySelectorAll('[data-name="accordion-title"]');
+const header = document.querySelector(".accordion__list");
+headers.forEach(function (item) {
+  item.addEventListener("click", function () {
+    this.classList.toggle("open");
+  });
+});
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
