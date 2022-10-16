@@ -384,7 +384,13 @@
                 </p>
                 <div class="text-box__buttons">
                   <button class="button">Read now</button>
-                  <a class="buttons__link" href="#">Add to your bookmarks</a>
+                  <button
+                    class="buttons__link"
+                    href="#"
+                    data-modal-button="modal-1"
+                  >
+                    Add to your bookmarks
+                  </button>
                 </div>
               </div>
               <svg
@@ -438,47 +444,16 @@
               <a href="#" class="dot"></a>
               <a href="#" class="dot"></a>
             </div>
-          </section>
-          <section class="testimonials">
-            <div class="testimoials__wrapper">
-              <div class="testimonials__text-box">
-                <p class="text-box__subtitle">testimonials</p>
-                <h3 class="text-box__title">Customer's quotes</h3>
-                <p class="text-box__text">
-                  Brute laoreet efficiendi id his, ea illum nonumes luptatum
-                  pro. Usu atqui laudem an.
+
+            <div class="popup popup__hidden" id="modal-1" data-modal>
+              <div class="popup__window">
+                <h4 class="popup__title reading__title">Great!</h4>
+                <p class="popup__text">
+                  You have successfully added this page to your bookmarks!
                 </p>
-              </div>
-              <div class="testimonials__quotes-wrapper">
-                <div class="quotes__box">
-                  <p class="quotes__text">
-                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut
-                    nam. Eu usu vidit tractatos, vero tractatos ius an, in mel
-                    diceret persecuti.
-                  </p>
-                  <img
-                    src="img/Ellipse 2.1.png"
-                    alt="customer photo"
-                    class="quotes__circle"
-                  />
-                </div>
-                <div class="quotes__box opacity__box">
-                  <p class="quotes__text">
-                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut
-                    nam. Eu usu vidit tractatos, vero tractatos ius an, in mel
-                    diceret persecuti.
-                  </p>
-                </div>
-                <div class="quotes__dots dots">
-                  <div class="quotes__dot dot"></div>
-                  <div class="quotes__dot dot"></div>
-                  <div class="quotes__dot dot full"></div>
-                  <div class="quotes__dot dot"></div>
-                  <div class="quotes__dot dot"></div>
-                  <div class="quotes__dot dot"></div>
-                  <div class="quotes__dot dot"></div>
-                  <div class="quotes__dot dot"></div>
-                </div>
+                <button class="button popup__button" data-modal-close>
+                  Close
+                </button>
               </div>
             </div>
           </section>

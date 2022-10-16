@@ -53,6 +53,27 @@ headers.forEach(function (item) {
   });
 });
 
+const button = document.querySelector("[data-modal-button");
+const modal = document.querySelector("[data-modal]");
+const buttonClose = document.querySelector("[data-modal-close]");
+
+button.addEventListener("click", function () {
+  modal.classList.remove("popup__hidden");
+});
+
+buttonClose.addEventListener("click", function () {
+  modal.classList.add("popup__hidden");
+});
+modal.addEventListener("click", function () {
+  modal.classList.add("popup__hidden");
+});
+
+modal
+  .querySelector(".popup__window")
+  .addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {

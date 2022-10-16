@@ -806,7 +806,6 @@ body {
   background: linear-gradient(to right bottom, #e9efff, #e0e9ff);
 }
 /* =========CAROUSEL SECTION================== */
-
 .reading {
   height: 865px;
   display: flex;
@@ -814,6 +813,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #f5f8ff;
+  position: relative;
 }
 .reading__title-box {
   height: 62px;
@@ -910,6 +910,9 @@ body {
   text-align: center;
   text-decoration: none;
   margin-left: 25px;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 .arrow-left {
   width: 24px;
@@ -960,6 +963,40 @@ body {
 }
 .full {
   background-color: #5283ff;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #b3ceff82;
+}
+.popup__window {
+  border: 1px solid #5283ff;
+  position: absolute;
+  background-color: #fff;
+  padding: 24px 48px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.popup__hidden {
+  display: none;
+}
+
+.popup__text {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #8e96b7;
 }
 
 /* ACCORDION SECTION */
